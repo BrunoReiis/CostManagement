@@ -1,7 +1,9 @@
+import React from 'react';
 import './App.css';
-import Expenses from './components/Expenses';
+import Expenses from './components/Expenses/Expenses';
 
-function App() {
+const App = () => {
+  /* Declarando os atributos */
   const expenses = [
     {
       id: 'e1',
@@ -23,8 +25,16 @@ function App() {
       date: new Date(2021, 5, 12),
     },
   ];
+/* Fim declaração de atributos */
 
+/* Colocando os atributos na tela */
 
+  // return React.createElement(
+  //   "div", 
+  //   {},  
+  //   React.createElement("h2", {}, "Let's get Started!" ),
+  //   React.createElement(Expenses, {items: expenses})
+  // );
 
   return (
     <div>
